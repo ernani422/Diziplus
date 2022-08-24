@@ -6,24 +6,6 @@
     android:layout_height="match_parent">
 
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Etanol"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-    <EditText
-        android:id="@+id/valor_dois_edit_text"
-        android:layout_width="97dp"
-        android:layout_height="24dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/valor_um_edit_text" />
-
     <Button
         android:id="@+id/karcula_Button"
         android:layout_width="113dp"
@@ -45,24 +27,24 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="406dp"
+        android:layout_width="397dp"
+        android:layout_height="402dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="248dp">
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="77dp">
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="378dp"
             android:layout_height="wrap_content"
-            android:text="O melhor Combustivel"
+            android:text="Consumo Combustivel "
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="277dp"
             android:layout_height="30dp"
-            android:text="Quanto seu veiculo consome por litro"
+            android:text="Consumo médio (km/l)"
             android:textAlignment="center" />
 
         <TextView
@@ -82,16 +64,16 @@
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Gasolina" />
+                android:text="Gasolina R$" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/valor_um_edit_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:hint=" 0,00"
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <LinearLayout
@@ -101,19 +83,19 @@
 
             <TextView
                 android:id="@+id/textView14"
-                android:layout_width="wrap_content"
+                android:layout_width="35dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Etanol" />
+                android:text="Etanol R$" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/valor_dois_edit_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:hint="R$ 0,00"
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <LinearLayout
@@ -129,13 +111,12 @@
                 android:text="consumo gasolina" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:hint="km/l"
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <LinearLayout
@@ -151,13 +132,12 @@
                 android:text="Consumo Etanol" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:hint="km/l"
+                android:inputType="textPersonName" />
         </LinearLayout>
 
     </LinearLayout>

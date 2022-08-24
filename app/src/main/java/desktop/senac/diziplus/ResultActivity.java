@@ -24,6 +24,7 @@ public class ResultActivity extends Activity{
 
         if(resultado >= 0.7) {
             resultadoView.setText("O melhor combustivel é a gasolina");
+
         }else{
             resultadoView.setText("O melhor combustivel é o Etanol");
         }
