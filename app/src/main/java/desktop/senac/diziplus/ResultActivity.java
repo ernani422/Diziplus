@@ -17,9 +17,6 @@ public class ResultActivity extends Activity{
         Intent intent = getIntent();
         String valorUm = intent.getStringExtra(MainActivity.EXTRA_VALOR_UM);
         String valorDois = intent.getStringExtra(MainActivity.EXTRA_VALOR_DOIS);
-        String consumoGasolina = intent.getStringExtra(pr.senac.br.melhorcombustivel.MainActivity.EXTRA_CONSUMO_GASOLINA);
-        String consumoEtanol = intent.getStringExtra(pr.senac.br.melhorcombustivel.MainActivity.EXTRA_CONSUMO_ETANOL);
-
         TextView resultadoView = findViewById(R.id.resultadoView);
         double valorUmBack = Double.parseDouble(valorUm);
         double valorDoisBack =Double.parseDouble(valorDois);
