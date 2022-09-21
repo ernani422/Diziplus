@@ -15,6 +15,7 @@ public class MainActivity extends Activity {
     public static final String EXTRA_VALOR_UM = "VALOR_UM";
     public static final String EXTRA_VALOR_DOIS = "VALOR_DOIS";
     private Button karculaButton;
+    private Button buttonLimpar;
     private EditText valorUmEdiText;
     private EditText valorDoisEdiText;
 
@@ -23,11 +24,12 @@ public class MainActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast.makeText(this, "Rodrigo Souza", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Ernani da Paz", Toast.LENGTH_LONG).show();
         valorUmEdiText = findViewById(R.id.valor_um_edit_text);
         valorDoisEdiText = findViewById(R.id.valor_dois_edit_text);
         karculaButton = findViewById(R.id.karcula_Button);
         karculaButton.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
                 changeToResultScreen();
